@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/JamesMGreene/jquery.outerHtml.png)](https://travis-ci.org/JamesMGreene/jquery.outerHtml)
+
 # $.outerHtml
 
 A simple jQuery plugin to get or set a node's outer HTML, a la IE's [formerly] proprietary `outerHTML` property on elements.
