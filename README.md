@@ -6,7 +6,9 @@ A simple jQuery plugin to get or set a node's outer HTML, a la IE's [formerly] p
 Get the outer HTML contents of the first node in the set of matched elements or set the outer HTML contents of every matched node.
 
 ## Getting Started
-Download the [production version][min] or the [development version][max].
+Check the [jQuery Plugins Registry](http://plugins.jquery.com/outerHtml/) for the latest published version of this plugin!
+
+You can also download the [production version][min] or the [development version][max] from GitHub.
 
 [min]: https://raw.github.com/JamesMGreene/jquery.outerHtml/master/dist/outerHtml.min.js
 [max]: https://raw.github.com/JamesMGreene/jquery.outerHtml/master/dist/outerHtml.js
@@ -53,4 +55,5 @@ _not_ maintain any of the old node's events, data, etc. Consider yourself warned
 _(Coming soon)_
 
 ## Release History
-_(Nothing yet)_
+ - 1.0.2: Published to the jQuery Plugins Registry on 2013-02-07.
+     - Initial release, plus two minor "README.md" updates
