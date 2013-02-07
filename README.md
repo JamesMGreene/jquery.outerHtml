@@ -55,5 +55,5 @@ _not_ maintain any of the old node's events, data, etc. Consider yourself warned
 _(Coming soon)_
 
 ## Release History
- - 1.0.2: Published to the jQuery Plugins Registry on 2013-02-07.
-     - Initial release, plus two minor "README.md" updates
+ - 1.0.3: Published to the jQuery Plugins Registry on 2013-02-07.
+     - Initial release, plus some minor "README.md" and manifest updates
