@@ -56,7 +56,7 @@ _not_ maintain any of the old node's events, data, etc. Consider yourself warned
 _(Coming soon)_
 
 ## Release History
- - 1.0.6: Published to the jQuery Plugins Registry on 2013-02-07.
+ - 1.0.7: Published to the jQuery Plugins Registry on 2013-02-07.
      - Fixed [Issue #1](https://github.com/JamesMGreene/jquery.outerHtml/issues/1), resolving all known issues with jQuery 1.8.x
  - 1.0.5: Published to the jQuery Plugins Registry on 2013-02-07.
      - Initial release, plus some minor fixes to "README.md", jQPR manifest, and Travis-CI config
