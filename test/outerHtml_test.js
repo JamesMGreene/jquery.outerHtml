@@ -1,21 +1,36 @@
-(function($) {
+(function($, undefined) {
 
   var domInteractionTypeModules = [
     {
       name: 'Attached DOM',
-      lifecycle: {}
+      lifecycle: {
+        setup: function() {
+          this.expectedParent = {
+            id: 'qunit-fixture',
+            nodeName: 'div',
+            nodeType: 1
+          };
+        }
+      }
     },
     {
       name: 'Detached DOM',
       lifecycle: {
         setup: function() {
-          // Don't attach to the DOM
+          this.expectedParent = {
+            id: undefined,
+            nodeName: '#document-fragment',
+            nodeType: 11
+          };
+
+          // Duck punch `appendTo` so that it doesn't attach to the DOM
           this.$appendTo = $.fn.appendTo;
           $.fn.appendTo = function() {
             return this;
           };
         },
         teardown: function() {
+          // Restore the original `appendTo`
           $.fn.appendTo = this.$appendTo;
         }
       }
@@ -152,10 +167,18 @@
     });
     
     test('Should maintain the same parents', function() {
-      expect(1);
-      var $coll = $('<s>bad</s>').appendTo('#qunit-fixture'),
-          collExpectedParentNodes = $coll.parent().get();
-      deepEqual($coll.outerHtml('<div>good</div>').parent().get(), collExpectedParentNodes);
+      expect(6);
+      var $coll = $('<s>bad</s>').appendTo('#qunit-fixture');
+      
+      var parentBefore = $coll.get(0).parentNode;
+      strictEqual(parentBefore.id || '', this.expectedParent.id || '');
+      strictEqual(parentBefore.nodeName.toLowerCase(), this.expectedParent.nodeName);
+      strictEqual(parentBefore.nodeType, this.expectedParent.nodeType);
+      
+      var parentAfter = $coll.outerHtml('<div>good</div>').get(0).parentNode;
+      strictEqual(parentAfter.id || '', this.expectedParent.id || '');
+      strictEqual(parentAfter.nodeName.toLowerCase(), this.expectedParent.nodeName);
+      strictEqual(parentAfter.nodeType, this.expectedParent.nodeType);
     });
     
     test('Can set outerHTML of a text node to another text node', function() {

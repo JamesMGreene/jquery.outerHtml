@@ -39,15 +39,16 @@ _not_ maintain any of the old node's events, data, etc. Consider yourself warned
 
 ## Compatibility
 **Works 100% with jQuery versions:**  
- - 1.4.4
- - 1.5.2
- - 1.6.4
- - 1.7.2
+ - 1.4.x
+ - 1.5.x
+ - 1.6.x
+ - 1.7.x
+ - 1.8.x
  - 1.9.1
 
 **Has known issues with jQuery versions:**  
- - 1.8.x (all of them: 1.8.0, 1.8.1, 1.8.2, 1.8.3)
-     - [`$(...).replaceWith`](http://api.jquery.com/replaceWith/) on a detached DOM element/node is unexpectedly adding a parent node
+ - 1.9.0
+     - Unit test fails for both attached and detached DOM: "Can set outerHTML of a text node to an element"
  - 2.0.0b1
      - Lots of issues in jQuery core, by the looks of it :confused:
 
@@ -55,5 +56,7 @@ _not_ maintain any of the old node's events, data, etc. Consider yourself warned
 _(Coming soon)_
 
 ## Release History
+ - 1.0.6: Published to the jQuery Plugins Registry on 2013-02-07.
+     - Fixed [Issue #1](https://github.com/JamesMGreene/jquery.outerHtml/issues/1), resolving all known issues with jQuery 1.8.x
  - 1.0.5: Published to the jQuery Plugins Registry on 2013-02-07.
      - Initial release, plus some minor fixes to "README.md", jQPR manifest, and Travis-CI config
