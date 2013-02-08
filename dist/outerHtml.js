@@ -1,4 +1,4 @@
-/*! $.outerHtml - v1.0.6 - 2013-02-07
+/*! $.outerHtml - v1.0.7 - 2013-02-07
 * https://github.com/JamesMGreene/jquery.outerHtml
 * Copyright (c) 2013 James M. Greene; Licensed MIT */
 (function($) {
@@ -43,8 +43,8 @@
           });
           return parents;
         }).call(this);
-        var $updatedColl = setterFn.call(this, value);
-        return $updatedColl.map(function(i) {
+        
+        return setterFn.call(this, value).map(function(i) {
           if (!parentsOfThis[i]) {
             if (this.parentNode) {
               return this.parentNode.removeChild(this);

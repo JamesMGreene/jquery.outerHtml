@@ -56,6 +56,8 @@ _not_ maintain any of the old node's events, data, etc. Consider yourself warned
 _(Coming soon)_
 
 ## Release History
+ - 1.0.8: Published to the jQuery Plugins Registry on 2013-02-07.
+     - Updated the local libs for jQuery and QUnit. Added testing for "jquery-git.js" (the latest jQuery master branch code).
  - 1.0.7: Published to the jQuery Plugins Registry on 2013-02-07.
      - Fixed [Issue #1](https://github.com/JamesMGreene/jquery.outerHtml/issues/1), resolving all known issues with jQuery 1.8.x
  - 1.0.5: Published to the jQuery Plugins Registry on 2013-02-07.
