@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/JamesMGreene/jquery.outerHtml.png)](https://travis-ci.org/JamesMGreene/jquery.outerHtml)
 
-# $.outerHtml
+# jquery.outerHtml
 
 A simple jQuery plugin to get or set a node's outer HTML, a la IE's [formerly] proprietary `outerHTML` property on elements.
 Get the outer HTML contents of the first node in the set of matched elements or set the outer HTML contents of every matched node.
@@ -10,14 +10,14 @@ Check the [jQuery Plugins Registry](http://plugins.jquery.com/outerHtml/) for th
 
 You can also download the [production version][min] or the [development version][max] from GitHub.
 
-[min]: https://raw.github.com/JamesMGreene/jquery.outerHtml/master/dist/outerHtml.min.js
-[max]: https://raw.github.com/JamesMGreene/jquery.outerHtml/master/dist/outerHtml.js
+[min]: https://raw.github.com/JamesMGreene/jquery.outerHtml/master/dist/jquery.outerHtml.min.js
+[max]: https://raw.github.com/JamesMGreene/jquery.outerHtml/master/dist/jquery.outerHtml.js
 
 In your web page:
 
 ```html
 <script src="jquery.js"></script>
-<script src="dist/outerHtml.min.js"></script>
+<script src="dist/jquery.outerHtml.min.js"></script>
 <script>
     jQuery("div").outerHtml();
 </script>
@@ -56,6 +56,8 @@ _not_ maintain any of the old node's events, data, etc. Consider yourself warned
 _(Coming soon)_
 
 ## Release History
+ - 1.0.10: Published to the jQuery Plugins Registry on 2013-02-14.
+     - Changed the filenames to include the "jquery." prefix.
  - 1.0.9: Published to the jQuery Plugins Registry on 2013-02-08.
      - Added more keywords (tags) for the registry.
  - 1.0.8: Published to the jQuery Plugins Registry on 2013-02-07.

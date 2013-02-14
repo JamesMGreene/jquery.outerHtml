@@ -1,4 +1,4 @@
-/*! $.outerHtml - v1.0.7 - 2013-02-07
+/*! jquery.outerHtml - v1.0.10 - 2013-02-14
 * https://github.com/JamesMGreene/jquery.outerHtml
 * Copyright (c) 2013 James M. Greene; Licensed MIT */
 (function($) {
