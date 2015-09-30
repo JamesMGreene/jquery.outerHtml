@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/JamesMGreene/jquery.outerHtml.png)](https://travis-ci.org/JamesMGreene/jquery.outerHtml)
+[![Build Status](https://travis-ci.org/JamesMGreene/jquery.outerHtml.png?branch=master)](https://travis-ci.org/JamesMGreene/jquery.outerHtml)
 
 # jquery.outerHtml
 
