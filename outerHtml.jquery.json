@@ -2,12 +2,12 @@
   "name": "outerHtml",
   "title": "jquery.outerHtml",
   "description": "A simple jQuery plugin to get or set a node's outer HTML, a la IE's [formerly] proprietary `outerHTML` property on elements. Get the outer HTML contents of the first node in the set of matched elements or set the outer HTML contents of every matched node.",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "homepage": "https://github.com/JamesMGreene/jquery.outerHtml",
   "author": {
     "name": "James M. Greene",
     "email": "james.m.greene@gmail.com",
-    "url": "http://jamesgreene.net/"
+    "url": "http://greene.io/"
   },
   "repository": {
     "type": "git",
